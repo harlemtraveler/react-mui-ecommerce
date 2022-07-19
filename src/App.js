@@ -3,6 +3,7 @@ import theme from "./styles/theme";
 import { ThemeProvider } from "@mui/material";
 // import { ThemeProvider } from "@mui/system";
 import { Container, Button } from "@mui/material";
+import Appbar from "./components/appbar";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           background: '#fff'
         }}
       >
+        <Appbar />
         {
           /*
           Appbar
