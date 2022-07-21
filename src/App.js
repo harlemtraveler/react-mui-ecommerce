@@ -4,6 +4,7 @@ import { ThemeProvider } from "@mui/material";
 // import { ThemeProvider } from "@mui/system";
 import { Container, Button } from "@mui/material";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         }}
       >
         <Appbar />
+        <Banner />
         {
           /*
           Appbar
@@ -32,7 +34,7 @@ function App() {
           AppDrawer
           */
         }
-        <Button variant="contained">Test</Button>
+
       </Container>
     </ThemeProvider>
   );
