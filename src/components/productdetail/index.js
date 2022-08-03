@@ -44,7 +44,12 @@ export default function ProductDetail({ open, onClose, product }) {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Dialog>
+    <Dialog
+      TransitionComponent={SlideTransition}
+      variant="permanent"
+      open={open}
+      fullScreen
+    >
       {/* Title */}
       <DialogTitle sx={{ background: Colors.secondary }}>
         {/* todo: temp value */}
@@ -78,9 +83,14 @@ export default function ProductDetail({ open, onClose, product }) {
               {product.description}
             </Typography>
             {/* Add to Cart Button */}
-            <Box>
+            <Box
+              sx={{ mt: 4 }}
+              display="flex"
+              alignItems="center"
+              justifyContent="space-between"
+            >
               {/* todo: create the "IncDec" component */}
-              {/*<IncDec />*/}
+              <IncDec />
               <Button variant="contained">Add to Cart</Button>
             </Box>
             {/* Favorite Icon */}
@@ -94,11 +104,11 @@ export default function ProductDetail({ open, onClose, product }) {
             </Box>
             {/* Social Media Icons */}
             <Box
-              sx={{ mt: 4, color: Colors.dove_gray }}
+              sx={{ mt: 4, color: Colors.light }}
             >
               <FacebookIcon />
-              <TwitterIcon sx={{ pl: 2 }} />
-              <InstagramIcon sx={{ pl: 2 }} />
+              <TwitterIcon sx={{ pl: theme.spacing(4) }} />
+              <InstagramIcon sx={{ pl: theme.spacing(4) }} />
             </Box>
           </ProductDetailInfoWrapper>
         </ProductDetailWrapper>
