@@ -31,7 +31,6 @@ export default function Footer() {
     >
       <Grid container spacing={2} justifyContent="center">
         <Grid item md={6} lg={4}>
-          {/* todo: create & add the "FooterTitle" component here */}
           <FooterTitle variant="body1">About Us</FooterTitle>
           <Typography variant="caption2">
             Lorem ipsum dolor sit amet cons adipisicing elit sed do eiusm tempor
@@ -51,7 +50,6 @@ export default function Footer() {
         </Grid>
 
         <Grid item md={6} lg={2}>
-          {/* todo: create & add the "FooterTitle" component here */}
           <FooterTitle variant="body1">Information</FooterTitle>
           <List>
             <ListItemText>
@@ -70,7 +68,6 @@ export default function Footer() {
         </Grid>
 
         <Grid item md={6} lg={2}>
-          {/* todo: create & add the "FooterTitle" component here */}
           <FooterTitle variant="body1">My Account</FooterTitle>
           <List>
             <ListItemText>
@@ -89,10 +86,8 @@ export default function Footer() {
         </Grid>
 
         <Grid item md={6} lg={4}>
-          {/* todo: create & add the "FooterTitle" component here */}
           <FooterTitle variant="body1">Newsletter</FooterTitle>
           <Stack>
-            {/* todo: create & add the "SubscribeTf" component here */}
             <SubscribeTf
               color="primary"
               label="Email Address"
