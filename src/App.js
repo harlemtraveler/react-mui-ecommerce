@@ -10,6 +10,7 @@ import Promotions from "./components/promotions";
 import Products from "./components/products";
 import Footer from "./components/footer";
 import AppDrawer from "./components/drawer";
+import SearchBox from "./components/search"
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Appbar />
           <Banner />
           <Promotions />
+          <SearchBox />
           <Box display="flex" justifyContent="center" sx={{ p: 4 }}>
             <Typography variant="h4">Our Products</Typography>
           </Box>
